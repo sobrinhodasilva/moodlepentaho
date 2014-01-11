@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
     <name>dim_data_pt_br</name>
@@ -184,6 +185,28 @@ If you want these descriptions in your local language, just change the Row Gener
     </attributes>
   </connection>
   <connection>
+    <name>dw_moodlesof(164.41.222.139)</name>
+    <server>164.41.222.139</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>dw_moodlesof</database>
+    <port>8080</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86af4c282874dba79ca87abdf</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>8080</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
     <name>DW_PIBIC</name>
     <server>localhost</server>
     <type>POSTGRESQL</type>
@@ -200,6 +223,50 @@ If you want these descriptions in your local language, just change the Row Gener
       <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
       <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
       <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>eadsof_moodle22</name>
+    <server>164.41.222.139</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>eadsof_moodle22</database>
+    <port>8080</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86af4c282874dba79ca87abdf</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>8080</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>eadsof_moodle22(164.41.222.139)</name>
+    <server>164.41.222.139</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>eadsof_moodle22</database>
+    <port>8080</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86af4c282874dba79ca87abdf</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>8080</attribute></attribute>
       <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
       <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
       <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
@@ -232,7 +299,7 @@ If you want these descriptions in your local language, just change the Row Gener
     <server>localhost</server>
     <type>POSTGRESQL</type>
     <access>Native</access>
-    <database>MoodleSOF</database>
+    <database>MoodleSOF10</database>
     <port>5432</port>
     <username>postgres</username>
     <password>Encrypted 2be98afc86aa7f2e4bb16bd64d980aac9</password>
@@ -294,7 +361,7 @@ If you want these descriptions in your local language, just change the Row Gener
     </attributes>
   </connection>
   <order>
-  <hop> <from>40000 days: 100 years</from><to>Days_since</to><enabled>Y</enabled> </hop>  <hop> <from>Days_since</from><to>Calc Date</to><enabled>Y</enabled> </hop>  <hop> <from>DayOfWeekDesc</from><to>MonthDesc</to><enabled>Y</enabled> </hop>  <hop> <from>MonthDesc</from><to>Select values</to><enabled>Y</enabled> </hop>  <hop> <from>Select values</from><to>POPULA DIM DATA</to><enabled>N</enabled> </hop>  <hop> <from>Calc Date</from><to>Quarter</to><enabled>Y</enabled> </hop>  <hop> <from>Quarter</from><to>DayOfWeekDesc</to><enabled>Y</enabled> </hop>  <hop> <from>Days of week</from><to>DayOfWeekDesc</to><enabled>Y</enabled> </hop>  <hop> <from>Months</from><to>MonthDesc</to><enabled>Y</enabled> </hop>  </order>
+  <hop> <from>40000 days: 100 years</from><to>Days_since</to><enabled>Y</enabled> </hop>  <hop> <from>Days_since</from><to>Calc Date</to><enabled>Y</enabled> </hop>  <hop> <from>DayOfWeekDesc</from><to>MonthDesc</to><enabled>Y</enabled> </hop>  <hop> <from>MonthDesc</from><to>Select values</to><enabled>Y</enabled> </hop>  <hop> <from>Select values</from><to>POPULA DIM DATE</to><enabled>Y</enabled> </hop>  <hop> <from>Calc Date</from><to>Quarter</to><enabled>Y</enabled> </hop>  <hop> <from>Quarter</from><to>DayOfWeekDesc</to><enabled>Y</enabled> </hop>  <hop> <from>Days of week</from><to>DayOfWeekDesc</to><enabled>Y</enabled> </hop>  <hop> <from>Months</from><to>MonthDesc</to><enabled>Y</enabled> </hop>  </order>
   <step>
     <name>40000 days: 100 years</name>
     <type>RowGenerator</type>
@@ -719,7 +786,7 @@ If you want these descriptions in your local language, just change the Row Gener
     </step>
 
   <step>
-    <name>POPULA DIM DATA</name>
+    <name>POPULA DIM DATE</name>
     <type>TableOutput</type>
     <description/>
     <distribute>Y</distribute>
@@ -728,13 +795,13 @@ If you want these descriptions in your local language, just change the Row Gener
            <method>none</method>
            <schema_name/>
            </partitioning>
-    <connection>DW_MOODLE_SOF</connection>
+    <connection>dw_moodlesof(164.41.222.139)</connection>
     <schema>public</schema>
-    <table>DIM_DATA</table>
+    <table>dim_date</table>
     <commit>1000</commit>
     <truncate>Y</truncate>
     <ignore_errors>N</ignore_errors>
-    <use_batch>Y</use_batch>
+    <use_batch>N</use_batch>
     <specify_fields>N</specify_fields>
     <partitioning_enabled>N</partitioning_enabled>
     <partitioning_field/>
@@ -742,7 +809,7 @@ If you want these descriptions in your local language, just change the Row Gener
     <partitioning_monthly>Y</partitioning_monthly>
     <tablename_in_field>N</tablename_in_field>
     <tablename_field/>
-    <tablename_in_table>Y</tablename_in_table>
+    <tablename_in_table>N</tablename_in_table>
     <return_keys>N</return_keys>
     <return_field/>
     <fields>

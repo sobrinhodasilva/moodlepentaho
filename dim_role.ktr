@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>dim_curso</name>
+    <name>dim_role</name>
     <description/>
     <extended_description/>
     <trans_version/>
     <trans_type>Normal</trans_type>
-    <trans_status>0</trans_status>
     <directory>&#47;</directory>
     <parameters>
     </parameters>
@@ -62,9 +61,9 @@
     <clusterschemas>
     </clusterschemas>
   <created_user>-</created_user>
-  <created_date>2013&#47;07&#47;02 03:48:09.875</created_date>
+  <created_date>2013&#47;07&#47;16 23:39:25.073</created_date>
   <modified_user>-</modified_user>
-  <modified_date>2013&#47;07&#47;08 23:36:39.136</modified_date>
+  <modified_date>2013&#47;07&#47;16 23:39:25.073</modified_date>
   </info>
   <notepads>
   </notepads>
@@ -160,28 +159,6 @@
     </attributes>
   </connection>
   <connection>
-    <name>dw_moodlesof(164.41.222.139)</name>
-    <server>164.41.222.139</server>
-    <type>POSTGRESQL</type>
-    <access>Native</access>
-    <database>dw_moodlesof</database>
-    <port>8080</port>
-    <username>postgres</username>
-    <password>Encrypted 2be98afc86af4c282874dba79ca87abdf</password>
-    <servername/>
-    <data_tablespace/>
-    <index_tablespace/>
-    <attributes>
-      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
-      <attribute><code>PORT_NUMBER</code><attribute>8080</attribute></attribute>
-      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
-      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
-      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
-    </attributes>
-  </connection>
-  <connection>
     <name>DW_PIBIC</name>
     <server>localhost</server>
     <type>POSTGRESQL</type>
@@ -198,50 +175,6 @@
       <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
       <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
       <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
-      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
-      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
-      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
-    </attributes>
-  </connection>
-  <connection>
-    <name>eadsof_moodle22</name>
-    <server>164.41.222.139</server>
-    <type>POSTGRESQL</type>
-    <access>Native</access>
-    <database>eadsof_moodle22</database>
-    <port>8080</port>
-    <username>postgres</username>
-    <password>Encrypted 2be98afc86af4c282874dba79ca87abdf</password>
-    <servername/>
-    <data_tablespace/>
-    <index_tablespace/>
-    <attributes>
-      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
-      <attribute><code>PORT_NUMBER</code><attribute>8080</attribute></attribute>
-      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
-      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
-      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
-    </attributes>
-  </connection>
-  <connection>
-    <name>eadsof_moodle22(164.41.222.139)</name>
-    <server>164.41.222.139</server>
-    <type>POSTGRESQL</type>
-    <access>Native</access>
-    <database>eadsof_moodle</database>
-    <port>8080</port>
-    <username>postgres</username>
-    <password>Encrypted 2be98afc86af4c282874dba79ca87abdf</password>
-    <servername/>
-    <data_tablespace/>
-    <index_tablespace/>
-    <attributes>
-      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
-      <attribute><code>PORT_NUMBER</code><attribute>8080</attribute></attribute>
       <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
       <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
       <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
@@ -274,7 +207,7 @@
     <server>localhost</server>
     <type>POSTGRESQL</type>
     <access>Native</access>
-    <database>MoodleSOF10</database>
+    <database>MoodleSOF</database>
     <port>5432</port>
     <username>postgres</username>
     <password>Encrypted 2be98afc86aa7f2e4bb16bd64d980aac9</password>
@@ -336,319 +269,9 @@
     </attributes>
   </connection>
   <order>
-  <hop> <from>Table input Course</from><to>Calculator PHP DATE</to><enabled>Y</enabled> </hop>  <hop> <from>Calculator PHP DATE</from><to>Select values</to><enabled>Y</enabled> </hop>  <hop> <from>Select values</from><to>Dimension lookup&#47;update</to><enabled>Y</enabled> </hop>  </order>
+  </order>
   <step>
-    <name>Calculator PHP DATE</name>
-    <type>Calculator</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-       <calculation><field_name>segToDay</field_name>
-<calc_type>CONSTANT</calc_type>
-<field_a>86400</field_a>
-<field_b/>
-<field_c/>
-<value_type>Integer</value_type>
-<value_length>1</value_length>
-<value_precision>0</value_precision>
-<remove>Y</remove>
-<conversion_mask>0</conversion_mask>
-<decimal_symbol>.</decimal_symbol>
-<grouping_symbol>,</grouping_symbol>
-<currency_symbol/>
-</calculation>
-       <calculation><field_name>date_ini_php</field_name>
-<calc_type>CONSTANT</calc_type>
-<field_a>19700101</field_a>
-<field_b/>
-<field_c/>
-<value_type>Date</value_type>
-<value_length>-1</value_length>
-<value_precision>-1</value_precision>
-<remove>Y</remove>
-<conversion_mask>yyyyMMdd</conversion_mask>
-<decimal_symbol/>
-<grouping_symbol/>
-<currency_symbol/>
-</calculation>
-       <calculation><field_name>startdate_day</field_name>
-<calc_type>DIVIDE</calc_type>
-<field_a>startdate</field_a>
-<field_b>segToDay</field_b>
-<field_c/>
-<value_type>Integer</value_type>
-<value_length>1</value_length>
-<value_precision>0</value_precision>
-<remove>Y</remove>
-<conversion_mask>0</conversion_mask>
-<decimal_symbol>.</decimal_symbol>
-<grouping_symbol>,</grouping_symbol>
-<currency_symbol/>
-</calculation>
-       <calculation><field_name>startdate_date</field_name>
-<calc_type>ADD_DAYS</calc_type>
-<field_a>date_ini_php</field_a>
-<field_b>startdate_day</field_b>
-<field_c/>
-<value_type>Date</value_type>
-<value_length>-1</value_length>
-<value_precision>-1</value_precision>
-<remove>N</remove>
-<conversion_mask/>
-<decimal_symbol/>
-<grouping_symbol/>
-<currency_symbol/>
-</calculation>
-       <calculation><field_name>timecreate_day</field_name>
-<calc_type>DIVIDE</calc_type>
-<field_a>timecreated</field_a>
-<field_b>segToDay</field_b>
-<field_c/>
-<value_type>Integer</value_type>
-<value_length>-1</value_length>
-<value_precision>-1</value_precision>
-<remove>Y</remove>
-<conversion_mask/>
-<decimal_symbol/>
-<grouping_symbol/>
-<currency_symbol/>
-</calculation>
-       <calculation><field_name>timecreate_date</field_name>
-<calc_type>ADD_DAYS</calc_type>
-<field_a>date_ini_php</field_a>
-<field_b>timecreate_day</field_b>
-<field_c/>
-<value_type>Date</value_type>
-<value_length>-1</value_length>
-<value_precision>-1</value_precision>
-<remove>N</remove>
-<conversion_mask/>
-<decimal_symbol/>
-<grouping_symbol/>
-<currency_symbol/>
-</calculation>
-       <calculation><field_name>timemodificate_day</field_name>
-<calc_type>DIVIDE</calc_type>
-<field_a>timemodified</field_a>
-<field_b>segToDay</field_b>
-<field_c/>
-<value_type>Integer</value_type>
-<value_length>-1</value_length>
-<value_precision>-1</value_precision>
-<remove>Y</remove>
-<conversion_mask/>
-<decimal_symbol/>
-<grouping_symbol/>
-<currency_symbol/>
-</calculation>
-       <calculation><field_name>timemodificate_date</field_name>
-<calc_type>ADD_DAYS</calc_type>
-<field_a>date_ini_php</field_a>
-<field_b>timemodificate_day</field_b>
-<field_c/>
-<value_type>Date</value_type>
-<value_length>-1</value_length>
-<value_precision>-1</value_precision>
-<remove>N</remove>
-<conversion_mask/>
-<decimal_symbol/>
-<grouping_symbol/>
-<currency_symbol/>
-</calculation>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>245</xloc>
-      <yloc>76</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Dimension lookup&#47;update</name>
-    <type>DimensionLookup</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-      <schema/>
-      <table>dim_curso</table>
-      <connection>dw_moodlesof(164.41.222.139)</connection>
-      <commit>100</commit>
-      <update>Y</update>
-      <fields>
-        <key>
-          <name>id</name>
-          <lookup>id</lookup>
-        </key>
-        <date>
-          <name/>
-          <from>date_from</from>
-          <to>date_to</to>
-        </date>
-        <field>
-          <name>category</name>
-          <lookup>category</lookup>
-          <update>Update</update>
-        </field>
-        <field>
-          <name>fullname</name>
-          <lookup>fullname</lookup>
-          <update>Update</update>
-        </field>
-        <field>
-          <name>shortname</name>
-          <lookup>shortname</lookup>
-          <update>Update</update>
-        </field>
-        <field>
-          <name>idnumber</name>
-          <lookup>idnumber</lookup>
-          <update>Update</update>
-        </field>
-        <field>
-          <name>summary</name>
-          <lookup>summary</lookup>
-          <update>Update</update>
-        </field>
-        <field>
-          <name>format</name>
-          <lookup>format</lookup>
-          <update>Update</update>
-        </field>
-        <field>
-          <name>numsections</name>
-          <lookup>numsections</lookup>
-          <update>Update</update>
-        </field>
-        <field>
-          <name>visible</name>
-          <lookup>visible</lookup>
-          <update>Update</update>
-        </field>
-        <field>
-          <name>visibleold</name>
-          <lookup>visibleold</lookup>
-          <update>Update</update>
-        </field>
-        <field>
-          <name>startdate_date</name>
-          <lookup>startdate_date</lookup>
-          <update>Update</update>
-        </field>
-        <field>
-          <name>timecreate_date</name>
-          <lookup>timecreate_date</lookup>
-          <update>Update</update>
-        </field>
-        <field>
-          <name>timemodificate_date</name>
-          <lookup>timemodificate_date</lookup>
-          <update>Update</update>
-        </field>
-        <return>
-          <name>sk_course</name>
-          <rename/>
-          <creation_method>autoinc</creation_method>
-          <use_autoinc>Y</use_autoinc>
-          <version>version</version>
-        </return>
-      </fields>
-      <sequence/>
-      <min_year>1900</min_year>
-      <max_year>2199</max_year>
-      <cache_size>-1</cache_size>
-      <preload_cache>N</preload_cache>
-      <use_start_date_alternative>N</use_start_date_alternative>
-      <start_date_alternative>none</start_date_alternative>
-      <start_date_field_name/>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>387</xloc>
-      <yloc>242</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Select values</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <fields>      <field>        <name>id</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>category</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>fullname</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>shortname</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>idnumber</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>summary</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>format</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>numsections</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>visible</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>visibleold</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>startdate_date</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>timecreate_date</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>timemodificate_date</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>        <select_unspecified>N</select_unspecified>
-    </fields>     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>382</xloc>
-      <yloc>80</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Table input Course</name>
+    <name>Table input roel assignments</name>
     <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
@@ -657,50 +280,99 @@
            <method>none</method>
            <schema_name/>
            </partitioning>
-    <connection>eadsof_moodle22(164.41.222.139)</connection>
+    <connection>MoodleSOF</connection>
     <sql>SELECT
   id
-, category
-, sortorder
-, fullname
-, shortname
-, idnumber
-, summary
-, summaryformat
-, format
-, showgrades
-
-, newsitems
-, startdate
-, numsections
-, marker
-
-, legacyfiles
-, showreports
-, visible
-, visibleold
-, hiddensections
-, groupmode
-, groupmodeforce
-, defaultgroupingid
-, timecreated
+, roleid
+, contextid
+, userid
 , timemodified
-, requested
-, restrictmodules
-, enablecompletion
-, completionstartonenrol
-, completionnotify
-FROM mdl_course
+
+FROM mdl_role_assignments
 </sql>
-    <limit/>
+    <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
     <variables_active>N</variables_active>
     <lazy_conversion_active>N</lazy_conversion_active>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>93</xloc>
-      <yloc>76</yloc>
+      <xloc>83</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table input role name</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>MoodleSOF</connection>
+    <sql>SELECT
+  id
+, &quot;name&quot;
+, sortorder
+
+FROM mdl_role
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>81</xloc>
+      <yloc>83</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>REST Client</name>
+    <type>Rest</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <applicationType>TEXT PLAIN</applicationType>
+    <method>GET</method>
+    <url/>
+    <urlInField>N</urlInField>
+    <dynamicMethod>N</dynamicMethod>
+    <methodFieldName/>
+    <urlField/>
+    <bodyField/>
+    <httpLogin/>
+    <httpPassword/>
+    <httpPassword>Encrypted </httpPassword>
+    <proxyHost/>
+    <proxyPort/>
+    <preemptive>N</preemptive>
+    <trustStoreFile/>
+    <trustStorePassword/>
+    <headers>
+      </headers>
+    <parameters>
+      </parameters>
+    <result>
+      <name>result</name>
+      <code/>
+      <response_time/>
+      </result>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>363</xloc>
+      <yloc>93</yloc>
       <draw>Y</draw>
       </GUI>
     </step>

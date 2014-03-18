@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
     <name>Moodle User</name>
@@ -7,7 +6,7 @@
     <trans_version/>
     <trans_type>Normal</trans_type>
     <trans_status>0</trans_status>
-    <directory>&#47;</directory>
+    <directory>&#x2f;</directory>
     <parameters>
     </parameters>
     <log>
@@ -17,7 +16,7 @@
 <size_limit_lines/>
 <interval/>
 <timeout_days/>
-<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></trans-log-table>
 <perf-log-table><connection/>
 <schema/>
 <table/>
@@ -34,6 +33,11 @@
 <table/>
 <timeout_days/>
 <field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+<metrics-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>METRICS_DATE</id><enabled>Y</enabled><name>METRICS_DATE</name></field><field><id>METRICS_CODE</id><enabled>Y</enabled><name>METRICS_CODE</name></field><field><id>METRICS_DESCRIPTION</id><enabled>Y</enabled><name>METRICS_DESCRIPTION</name></field><field><id>METRICS_SUBJECT</id><enabled>Y</enabled><name>METRICS_SUBJECT</name></field><field><id>METRICS_TYPE</id><enabled>Y</enabled><name>METRICS_TYPE</name></field><field><id>METRICS_VALUE</id><enabled>Y</enabled><name>METRICS_VALUE</name></field></metrics-log-table>
     </log>
     <maxdate>
       <connection/>
@@ -63,18 +67,17 @@
     <clusterschemas>
     </clusterschemas>
   <created_user>-</created_user>
-  <created_date>2013&#47;07&#47;02 02:12:57.679</created_date>
+  <created_date>2013&#x2f;07&#x2f;02 02&#x3a;12&#x3a;57.679</created_date>
   <modified_user>-</modified_user>
-  <modified_date>2013&#47;07&#47;09 00:21:31.107</modified_date>
+  <modified_date>2014&#x2f;03&#x2f;18 13&#x3a;22&#x3a;01.871</modified_date>
   </info>
   <notepads>
     <notepad>
-      <note>Desnormalizar campos de atributos pessonalizados no perfil do usuário
-</note>
+      <note>Desnormalizar campos de atributos pessonalizados no perfil do usu&#xe1;rio&#xa;</note>
       <xloc>143</xloc>
       <yloc>120</yloc>
-      <width>428</width>
-      <heigth>40</heigth>
+      <width>580</width>
+      <heigth>48</heigth>
       <fontname>Verdana</fontname>
       <fontsize>12</fontsize>
       <fontbold>N</fontbold>
@@ -183,7 +186,7 @@
     </attributes>
   </connection>
   <connection>
-    <name>dw_moodlesof(164.41.222.139)</name>
+    <name>dw_moodlesof&#x28;164.41.222.139&#x29;</name>
     <server>164.41.222.139</server>
     <type>POSTGRESQL</type>
     <access>Native</access>
@@ -227,7 +230,7 @@
     </attributes>
   </connection>
   <connection>
-    <name>eadsof_moodle(164.41.222.139)</name>
+    <name>eadsof_moodle&#x28;164.41.222.139&#x29;</name>
     <server>164.41.222.139</server>
     <type>POSTGRESQL</type>
     <access>Native</access>
@@ -297,7 +300,7 @@
     <server>localhost</server>
     <type>POSTGRESQL</type>
     <access>Native</access>
-    <database>MoodleSOF10</database>
+    <database>MoodleSOF</database>
     <port>5432</port>
     <username>postgres</username>
     <password>Encrypted 2be98afc86aa7f2e4bb16bd64d980aac9</password>
@@ -359,12 +362,25 @@
     </attributes>
   </connection>
   <order>
-  <hop> <from>mdl_user_info_field</from><to>Sort rows</to><enabled>Y</enabled> </hop>  <hop> <from>mdl_user_info_data</from><to>Sort rows 2</to><enabled>Y</enabled> </hop>  <hop> <from>Sort rows</from><to>Merge Join</to><enabled>Y</enabled> </hop>  <hop> <from>Sort rows 2</from><to>Merge Join</to><enabled>Y</enabled> </hop>  <hop> <from>Merge Join</from><to>Select values</to><enabled>Y</enabled> </hop>  <hop> <from>Select values</from><to>Sort rows User Id</to><enabled>Y</enabled> </hop>  <hop> <from>Sort rows User Id</from><to>Row denormaliser</to><enabled>Y</enabled> </hop>  <hop> <from>Row denormaliser</from><to>Merge Join 2</to><enabled>Y</enabled> </hop>  <hop> <from>Sort rows User</from><to>Merge Join 2</to><enabled>Y</enabled> </hop>  <hop> <from>mdl_user</from><to>Select values user</to><enabled>Y</enabled> </hop>  <hop> <from>Select values user</from><to>Sort rows User</to><enabled>Y</enabled> </hop>  <hop> <from>Merge Join 2</from><to>Dimension lookup&#47;update Aluno</to><enabled>Y</enabled> </hop>  </order>
+  <hop> <from>mdl_user_info_field</from><to>Sort rows</to><enabled>Y</enabled> </hop>
+  <hop> <from>mdl_user_info_data</from><to>Sort rows 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Sort rows</from><to>Merge Join</to><enabled>Y</enabled> </hop>
+  <hop> <from>Sort rows 2</from><to>Merge Join</to><enabled>Y</enabled> </hop>
+  <hop> <from>Merge Join</from><to>Select values</to><enabled>Y</enabled> </hop>
+  <hop> <from>Select values</from><to>Sort rows User Id</to><enabled>Y</enabled> </hop>
+  <hop> <from>Sort rows User Id</from><to>Row denormaliser</to><enabled>Y</enabled> </hop>
+  <hop> <from>Row denormaliser</from><to>Merge Join 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Sort rows User</from><to>Merge Join 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>mdl_user</from><to>Select values user</to><enabled>Y</enabled> </hop>
+  <hop> <from>Select values user</from><to>Sort rows User</to><enabled>Y</enabled> </hop>
+  <hop> <from>Merge Join 2</from><to>Dimension lookup&#x2f;update Aluno</to><enabled>Y</enabled> </hop>
+  </order>
   <step>
-    <name>Dimension lookup&#47;update Aluno</name>
+    <name>Dimension lookup&#x2f;update Aluno</name>
     <type>DimensionLookup</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -372,7 +388,7 @@
            </partitioning>
       <schema/>
       <table>dim_aluno</table>
-      <connection>dw_moodlesof(164.41.222.139)</connection>
+      <connection>dw_moodlesof&#x28;164.41.222.139&#x29;</connection>
       <commit>100</commit>
       <update>Y</update>
       <fields>
@@ -586,11 +602,6 @@
           <update>Update</update>
         </field>
         <field>
-          <name>ajax</name>
-          <lookup>ajax</lookup>
-          <update>Update</update>
-        </field>
-        <field>
           <name>autosubscribe</name>
           <lookup>autosubscribe</lookup>
           <update>Update</update>
@@ -618,11 +629,6 @@
         <field>
           <name>imagealt</name>
           <lookup>imagealt</lookup>
-          <update>Update</update>
-        </field>
-        <field>
-          <name>screenreader</name>
-          <lookup>screenreader</lookup>
           <update>Update</update>
         </field>
         <field>
@@ -684,6 +690,7 @@
     <type>MergeJoin</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -711,6 +718,7 @@
     <type>MergeJoin</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -738,6 +746,7 @@
     <type>Denormaliser</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -837,8 +846,8 @@
         </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>678</xloc>
-      <yloc>218</yloc>
+      <xloc>740</xloc>
+      <yloc>196</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -848,6 +857,7 @@
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -879,6 +889,7 @@
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1016,6 +1027,10 @@
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
+      </field>      <field>        <name>secret</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
       </field>      <field>        <name>picture</name>
         <rename/>
         <length>-2</length>
@@ -1048,10 +1063,6 @@
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
-      </field>      <field>        <name>ajax</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
       </field>      <field>        <name>autosubscribe</name>
         <rename/>
         <length>-2</length>
@@ -1076,15 +1087,11 @@
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
-      </field>      <field>        <name>screenreader</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
       </field>        <select_unspecified>N</select_unspecified>
     </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>1076</xloc>
-      <yloc>212</yloc>
+      <yloc>214</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -1094,12 +1101,13 @@
     <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
            <schema_name/>
            </partitioning>
-      <directory>%%java.io.tmpdir%%</directory>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
       <prefix>out</prefix>
       <sort_size>1000000</sort_size>
       <free_memory/>
@@ -1111,6 +1119,7 @@
         <name>id</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
       </field>
     </fields>
      <cluster_schema/>
@@ -1126,12 +1135,13 @@
     <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
            <schema_name/>
            </partitioning>
-      <directory>%%java.io.tmpdir%%</directory>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
       <prefix>out</prefix>
       <sort_size>1000000</sort_size>
       <free_memory/>
@@ -1143,11 +1153,13 @@
         <name>fieldid</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
       </field>
       <field>
         <name>userid</name>
         <ascending>N</ascending>
         <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
       </field>
     </fields>
      <cluster_schema/>
@@ -1163,12 +1175,13 @@
     <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
            <schema_name/>
            </partitioning>
-      <directory>%%java.io.tmpdir%%</directory>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
       <prefix>out</prefix>
       <sort_size>1000000</sort_size>
       <free_memory/>
@@ -1180,6 +1193,7 @@
         <name>id</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
       </field>
     </fields>
      <cluster_schema/>
@@ -1195,12 +1209,13 @@
     <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
            <schema_name/>
            </partitioning>
-      <directory>%%java.io.tmpdir%%</directory>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
       <prefix>out</prefix>
       <sort_size>1000000</sort_size>
       <free_memory/>
@@ -1212,12 +1227,13 @@
         <name>userid</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
       </field>
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>580</xloc>
-      <yloc>219</yloc>
+      <xloc>607</xloc>
+      <yloc>220</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -1227,66 +1243,14 @@
     <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
            <schema_name/>
            </partitioning>
-    <connection>eadsof_moodle(164.41.222.139)</connection>
-    <sql>SELECT
-  id
-, auth
-, confirmed
-, policyagreed
-, deleted
-, suspended
-, mnethostid
-, username
-, idnumber
-, firstname
-, lastname
-, email
-, emailstop
-, icq
-, skype
-, yahoo
-, aim
-, msn
-, phone1
-, phone2
-, institution
-, department
-, address
-, city
-, country
-, lang
-, theme
-, timezone
-, firstaccess
-, lastaccess
-, lastlogin
-, currentlogin
-, lastip
-, secret
-, picture
-, url
-, description
-, descriptionformat
-, mailformat
-, maildigest
-, maildisplay
-, htmleditor
-, ajax
-, autosubscribe
-, trackforums
-, timecreated
-, timemodified
-, trustbitmask
-, imagealt
-, screenreader
-FROM mdl_user
-
-</sql>
+    <connection>eadsof_moodle&#x28;164.41.222.139&#x29;</connection>
+    <sql>SELECT&#xa;  id&#xa;, auth&#xa;, confirmed&#xa;, policyagreed&#xa;, deleted&#xa;, suspended&#xa;, mnethostid&#xa;, username&#xa;&#xa;, idnumber&#xa;, firstname&#xa;, lastname&#xa;, email&#xa;, emailstop&#xa;, icq&#xa;, skype&#xa;, yahoo&#xa;, aim&#xa;, msn&#xa;, phone1&#xa;, phone2&#xa;, institution&#xa;, department&#xa;, address&#xa;, city&#xa;, country&#xa;, lang&#xa;, theme&#xa;, timezone&#xa;, firstaccess&#xa;, lastaccess&#xa;, lastlogin&#xa;, currentlogin&#xa;, lastip&#xa;, secret&#xa;, picture&#xa;, url&#xa;, description&#xa;, descriptionformat&#xa;, mailformat&#xa;, maildigest&#xa;, maildisplay&#xa;, htmleditor&#xa;, autosubscribe&#xa;, trackforums&#xa;, timecreated&#xa;, timemodified&#xa;, trustbitmask&#xa;, imagealt&#xa;FROM mdl_user&#xa;</sql>
     <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
@@ -1305,20 +1269,14 @@ FROM mdl_user
     <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
            <schema_name/>
            </partitioning>
-    <connection>eadsof_moodle(164.41.222.139)</connection>
-    <sql>SELECT
-  id
-, userid
-, fieldid
-, &quot;data&quot;
-, dataformat
-FROM mdl_user_info_data
-</sql>
+    <connection>eadsof_moodle&#x28;164.41.222.139&#x29;</connection>
+    <sql>SELECT&#xa;  id&#xa;, userid&#xa;, fieldid&#xa;, &#x22;data&#x22;&#xa;, dataformat&#xa;FROM mdl_user_info_data&#xa;</sql>
     <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
@@ -1337,20 +1295,14 @@ FROM mdl_user_info_data
     <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
            <schema_name/>
            </partitioning>
-    <connection>eadsof_moodle(164.41.222.139)</connection>
-    <sql>SELECT
-  id
-, shortname
-, &quot;name&quot;
-, datatype
-
-FROM mdl_user_info_field
-</sql>
+    <connection>eadsof_moodle&#x28;164.41.222.139&#x29;</connection>
+    <sql>SELECT&#xa;  id&#xa;, shortname&#xa;, &#x22;name&#x22;&#xa;, datatype&#xa;&#xa;FROM mdl_user_info_field&#xa;</sql>
     <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
@@ -1369,4 +1321,5 @@ FROM mdl_user_info_field
    <slave-step-copy-partition-distribution>
 </slave-step-copy-partition-distribution>
    <slave_transformation>N</slave_transformation>
+
 </transformation>

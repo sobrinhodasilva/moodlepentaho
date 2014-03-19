@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
     <name>dim_curso</name>
@@ -6,7 +7,7 @@
     <trans_version/>
     <trans_type>Normal</trans_type>
     <trans_status>0</trans_status>
-    <directory>&#x2f;</directory>
+    <directory>&#47;</directory>
     <parameters>
     </parameters>
     <log>
@@ -16,7 +17,7 @@
 <size_limit_lines/>
 <interval/>
 <timeout_days/>
-<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></trans-log-table>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
 <perf-log-table><connection/>
 <schema/>
 <table/>
@@ -33,11 +34,6 @@
 <table/>
 <timeout_days/>
 <field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
-<metrics-log-table><connection/>
-<schema/>
-<table/>
-<timeout_days/>
-<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>METRICS_DATE</id><enabled>Y</enabled><name>METRICS_DATE</name></field><field><id>METRICS_CODE</id><enabled>Y</enabled><name>METRICS_CODE</name></field><field><id>METRICS_DESCRIPTION</id><enabled>Y</enabled><name>METRICS_DESCRIPTION</name></field><field><id>METRICS_SUBJECT</id><enabled>Y</enabled><name>METRICS_SUBJECT</name></field><field><id>METRICS_TYPE</id><enabled>Y</enabled><name>METRICS_TYPE</name></field><field><id>METRICS_VALUE</id><enabled>Y</enabled><name>METRICS_VALUE</name></field></metrics-log-table>
     </log>
     <maxdate>
       <connection/>
@@ -66,9 +62,9 @@
     <clusterschemas>
     </clusterschemas>
   <created_user>-</created_user>
-  <created_date>2013&#x2f;07&#x2f;02 03&#x3a;48&#x3a;09.875</created_date>
+  <created_date>2013&#47;07&#47;02 03:48:09.875</created_date>
   <modified_user>-</modified_user>
-  <modified_date>2014&#x2f;03&#x2f;18 14&#x3a;02&#x3a;08.585</modified_date>
+  <modified_date>2013&#47;07&#47;08 23:36:39.136</modified_date>
   </info>
   <notepads>
   </notepads>
@@ -164,7 +160,7 @@
     </attributes>
   </connection>
   <connection>
-    <name>dw_moodlesof&#x28;164.41.222.139&#x29;</name>
+    <name>dw_moodlesof(164.41.222.139)</name>
     <server>164.41.222.139</server>
     <type>POSTGRESQL</type>
     <access>Native</access>
@@ -230,7 +226,7 @@
     </attributes>
   </connection>
   <connection>
-    <name>eadsof_moodle22&#x28;164.41.222.139&#x29;</name>
+    <name>eadsof_moodle22(164.41.222.139)</name>
     <server>164.41.222.139</server>
     <type>POSTGRESQL</type>
     <access>Native</access>
@@ -278,7 +274,7 @@
     <server>localhost</server>
     <type>POSTGRESQL</type>
     <access>Native</access>
-    <database>MoodleSOF</database>
+    <database>MoodleSOF10</database>
     <port>5432</port>
     <username>postgres</username>
     <password>Encrypted 2be98afc86aa7f2e4bb16bd64d980aac9</password>
@@ -340,16 +336,12 @@
     </attributes>
   </connection>
   <order>
-  <hop> <from>Table input Course</from><to>Calculator PHP DATE</to><enabled>Y</enabled> </hop>
-  <hop> <from>Calculator PHP DATE</from><to>Select values</to><enabled>Y</enabled> </hop>
-  <hop> <from>Select values</from><to>Dimension lookup&#x2f;update</to><enabled>Y</enabled> </hop>
-  </order>
+  <hop> <from>Table input Course</from><to>Calculator PHP DATE</to><enabled>Y</enabled> </hop>  <hop> <from>Calculator PHP DATE</from><to>Select values</to><enabled>Y</enabled> </hop>  <hop> <from>Select values</from><to>Dimension lookup&#47;update</to><enabled>Y</enabled> </hop>  </order>
   <step>
     <name>Calculator PHP DATE</name>
     <type>Calculator</type>
     <description/>
     <distribute>Y</distribute>
-    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -476,11 +468,10 @@
     </step>
 
   <step>
-    <name>Dimension lookup&#x2f;update</name>
+    <name>Dimension lookup&#47;update</name>
     <type>DimensionLookup</type>
     <description/>
     <distribute>Y</distribute>
-    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -488,7 +479,7 @@
            </partitioning>
       <schema/>
       <table>dim_curso</table>
-      <connection>dw_moodlesof&#x28;164.41.222.139&#x29;</connection>
+      <connection>dw_moodlesof(164.41.222.139)</connection>
       <commit>100</commit>
       <update>Y</update>
       <fields>
@@ -566,7 +557,7 @@
           <rename/>
           <creation_method>autoinc</creation_method>
           <use_autoinc>Y</use_autoinc>
-          <version/>
+          <version>version</version>
         </return>
       </fields>
       <sequence/>
@@ -590,7 +581,6 @@
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
-    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -662,14 +652,46 @@
     <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
-    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
            <schema_name/>
            </partitioning>
-    <connection>eadsof_moodle22&#x28;164.41.222.139&#x29;</connection>
-    <sql>SELECT&#xa;  id&#xa;, category&#xa;, sortorder&#xa;, fullname&#xa;, shortname&#xa;, idnumber&#xa;, summary&#xa;, summaryformat&#xa;, format&#xa;, showgrades&#xa;, modinfo&#xa;, newsitems&#xa;, startdate&#xa;, marker&#xa;, maxbytes&#xa;, legacyfiles&#xa;, showreports&#xa;, visible&#xa;, visibleold&#xa;, groupmode&#xa;, groupmodeforce&#xa;, defaultgroupingid&#xa;, lang&#xa;, theme&#xa;, timecreated&#xa;, timemodified&#xa;, requested&#xa;, enablecompletion&#xa;, completionnotify&#xa;, sectioncache&#xa;FROM mdl_course&#xa;</sql>
+    <connection>eadsof_moodle22(164.41.222.139)</connection>
+    <sql>SELECT
+  id
+, category
+, sortorder
+, fullname
+, shortname
+, idnumber
+, summary
+, summaryformat
+, format
+, showgrades
+
+, newsitems
+, startdate
+, numsections
+, marker
+
+, legacyfiles
+, showreports
+, visible
+, visibleold
+, hiddensections
+, groupmode
+, groupmodeforce
+, defaultgroupingid
+, timecreated
+, timemodified
+, requested
+, restrictmodules
+, enablecompletion
+, completionstartonenrol
+, completionnotify
+FROM mdl_course
+</sql>
     <limit/>
     <lookup/>
     <execute_each_row>N</execute_each_row>
@@ -677,8 +699,8 @@
     <lazy_conversion_active>N</lazy_conversion_active>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>91</xloc>
-      <yloc>77</yloc>
+      <xloc>93</xloc>
+      <yloc>76</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -688,5 +710,4 @@
    <slave-step-copy-partition-distribution>
 </slave-step-copy-partition-distribution>
    <slave_transformation>N</slave_transformation>
-
 </transformation>
